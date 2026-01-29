@@ -217,7 +217,19 @@ font-size: .8rem;
   background: #ffe102 !important;
   color: #005F83 !important;
 }
+.badge.bg-brand-blue{
+  background: #dbeafe !important;
+}
+.badge.bg-brand-blue p{
+  color: #1447e6;
+}
 
+.badge.bg-brand-green{
+  background: #e6fbee !important;
+}
+.badge.bg-brand-green p{
+  color: #00a63e !important;
+}
 
 .video-frame {
     position: relative;
@@ -574,7 +586,7 @@ font-size: .8rem;
 }
 .info-brand-content svg{
   filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(0%) hue-rotate(242deg) brightness(103%) contrast(103%);
-  width: 20px;
+  width: 30px;
 }
 
 .info-tab-body-content .info-list-header {
@@ -696,11 +708,68 @@ font-size: .8rem;
 }
 
 
+.blink-slow {
+  animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+.info-text-card{
+  /* border: 1px solid #00a63e; */
+  border-radius: 10px;
+}
+.line-through{
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.info-alert-success{
+  border-color: #b9f8cf !important;
+  background: #f0fdf4;
+}
+.info-alert-warning{
+  border-color: #fff085 !important;
+  background: #fdfdef;
+}
+.placeholder{
+  background-color: #fff085;
+}
+.progress-bar{
+  background-color: #00aa40;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
 
+.badge.bg-brand-voilet{
+  background: #f3e8ff !important;
+}
+.bg-brand-voilet p{
+  color: #9810fa;
+}
+.badge.bg-voilet{
+  background-color: #9810fa !important;
+  color: #fff !important;
+}
+.badge.bg-voilet p{
+  background-color: #9810fa !important;
+  color: #fff !important;
+}
 
-
-
-
+.info-note-card.bg-voilet{
+  border-left: 0;
+  border-right: 4px solid #9810fa;
+}
+.badge-element-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.info-note-card.bg-yellow{
+  border-left: 0;
+  border-right: 4px solid #ffe102;
+  background: #fff8cc;
+}
 
 
 
@@ -855,9 +924,9 @@ textarea {
   }
 }
 @media (max-width: 576px) {
-  .vh-100 {
+  /* .vh-100 {
     height: 120vh !important;
-  }
+  } */
   .info-before-list li:nth-child(even) {
     justify-content: start;
   }
